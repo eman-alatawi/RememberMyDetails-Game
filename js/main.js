@@ -20,12 +20,23 @@ let levels = {
 
 let score = 0;
 
-let checkForObjectName = function(str){
-    // return str.includes(levels.level_1);
-    for (var i =0 ; i<levels.level_1.length; i++)
-    {
-        // console.log(str.includes(levels.level_1[i]))
-        return str.includes(levels.level_1[i]);
+// let checkForObjectName = function(hidden_word){
+//     // return str.includes(levels.level_1);
+//     for (var i =0 ; i<levels.level_1.length; i++)
+//     {
+//         console.log(levels.level_1[i].search(hidden_word))
+//         // return str.includes(levels.level_1[i]);
+//     }
+// }
+
+var checkForHiddenWord = function (question, hidden_word) {
+    var qusSplit = question.split(' ');
+
+    for (var i = 0; i < qusSplit.length; i++) {
+        if (qusSplit[i] == (hidden_word)) {
+            //   console.log("true found word "+qusSplit[i]);
+            return true;
+        }
     }
 }
 
@@ -39,31 +50,35 @@ $(document).ready(function () {
             "filter": "blur(8px)",
             "-webkit-filter": "blur(8px)",
         })
-         $(".question_box").show();
+        $(".question_box").show();
 
-        var q = $(".question_box > h2").html("Is there a " + levels.level_1[0] + " in the image?").text();
-        console.log(q);
-        $(".answer").click(function(){
-           var playerChoice = $(this).attr("id");
-           console.log(playerChoice);
+        // first question
+        var q = $(".question_box > h2").html("Is there a " + levels.level_1[1] + " in the image?").text();
+        var hidden_word = levels.level_1[1];
+        console.log(hidden_word);
+        $(".answer").click(function () {
+            var playerChoice = $(this).attr("id");
+            console.log(playerChoice);
 
-           var checkResult = checkForObjectName(q);
-           console.log(checkResult);
+            var checkResult = checkForHiddenWord(q, hidden_word);
+            console.log(checkResult);
 
-           if(checkResult ==true){
-               if(playerChoice == "yes")
-                 if(score < 4)
-                    score++;
-           } 
-           console.log(score);
-           $(".score").html("Score: "+score + "/ 4"); 
+            if (checkResult == true) {
+                if (playerChoice == "yes")
+                    if (score < 4)
+                        score++;
+            }
+            console.log(score);
+            $(".score").html("Score: " + score + " / 4");
         })
 
-        // var q = $(".question_box > h2").html("Is there a " + levels.level_1[1] + " in the image?").text();
-
-        
     }
     setTimeout(timeout, 62000);
+
+
+
+
+
 
 
 
