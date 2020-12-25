@@ -3,22 +3,26 @@
 * {
   box-sizing: border-box;
 }
-html {
-  height: 100%;
-}
+html,
 body {
-  background-color: rgba(15, 13, 13, 0.171);
+  height: 100%;
+  margin: 0px;
+  font-family: "Frijole";
+}
+
+.index_page {
+  padding: 6em;
+  background-color: rgb(46, 40, 41);
+  height: 100vh;
   background-image: url("/images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: "Frijole";
 }
 
 header {
   width: 100%;
   text-align: center;
-  margin-top: 10%;
 }
 .gameName {
   font-size: 3em;
@@ -55,13 +59,70 @@ header {
 
 /* Responsive  style for devices with width 830px (or less) and with landscape orientation */
 
-@media only screen and (max-width: 830px) and (orientation:landscape) {
-    .gameName{
-        font-size: 2em;
-    }
-    .buttons_container > .btn {
-        width: 25%;
-        font-size: 0.6em;
-      }
+@media only screen and (max-width: 830px) and (orientation: landscape) {
+  .gameName {
+    font-size: 2em;
+  }
+  .buttons_container > .btn {
+    width: 25%;
+    font-size: 0.6em;
+  }
+}
 
+/* level1.html styles*/
+
+.level1_page {
+  padding: 0.3em;
+  background-color: rgb(46, 40, 41);
+  height: 100vh;
+  background-image: url("/images/image2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top_nav{
+    background-color: rgba(12, 9, 6, 0.589);
+    color: rgba(241, 163, 36, 0.973);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+
+#bottom_nav {
+  background-color: rgba(12, 9, 6, 0.589);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+.objectsName_container{
+    /* background-color: chartreuse; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.objectsName_container >.obj_name{
+      margin: 0.5em;
+}
+
+#bottom_nav.btn  a {
+    text-decoration: none;
+    color: rgb(44, 40, 39);
+  }
+
+.objectsName_container p{
+    color: rgba(241, 163, 36, 0.973);
 }
