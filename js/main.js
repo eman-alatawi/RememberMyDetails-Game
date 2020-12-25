@@ -20,6 +20,16 @@ let levels = {
 
 let score = 0;
 
+let checkForObjectName = function(str){
+    // return str.includes(levels.level_1);
+    for (var i =0 ; i<levels.level_1.length; i++)
+    {
+        // console.log(str.includes(levels.level_1[i]))
+        return str.includes(levels.level_1[i]);
+    }
+}
+
+
 $(document).ready(function () {
     $(".question_box").hide();
 
@@ -30,7 +40,22 @@ $(document).ready(function () {
             "-webkit-filter": "blur(8px)",
         })
          $(".question_box").show();
-        var q = $(".question_box > h2").html("Is there a " + levels.level_1[0] + " in the image?");
+        var q = $(".question_box > h2").html("Is there a " + levels.level_1[0] + " in the image?").text();
+        console.log(q);
+        $(".answer").click(function(){
+           var playerChoice = $(this).attr("id");
+           console.log(playerChoice);
+
+           var checkResult = checkForObjectName(q);
+           console.log(checkResult);
+
+           if(checkResult ==true){
+               if(playerChoice == "yes")
+               score++;
+           }
+
+           console.log(score);
+        })
     }
     setTimeout(timeout, 62000);
 
