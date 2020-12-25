@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: rgba(15, 13, 13, 0.171);
+  background-image: url("/images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Frijole";
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+}
+.gameName {
+  font-size: 3em;
+  color: rgba(241, 163, 36, 0.973);
+  text-shadow: 5px 5px 10px red;
+}
+
+.buttons_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.buttons_container > .btn {
+  background-color: rgba(241, 162, 36, 0.966);
+  border-radius: 2em;
+  width: 20%;
+  font-size: 1em;
+  text-align: center;
+  padding: 1.3em;
+  line-height: 1em;
+  margin: 1.3em;
+  box-shadow: 0 4px 8px 0 rgba(226, 14, 14, 0.767);
+}
+.btn > a {
+  text-decoration: none;
+  color: rgb(224, 42, 10);
+}
+.btn > a:hover {
+  color: rgb(223, 210, 207);
+}
+
+/* Responsive  style for devices with width 830px (or less) and with landscape orientation */
+
+@media only screen and (max-width: 830px) and (orientation:landscape) {
+    .gameName{
+        font-size: 2em;
+    }
+    .buttons_container > .btn {
+        width: 25%;
+        font-size: 0.6em;
+      }
+
+}
