@@ -40,6 +40,7 @@ $(document).ready(function () {
             "-webkit-filter": "blur(8px)",
         })
          $(".question_box").show();
+
         var q = $(".question_box > h2").html("Is there a " + levels.level_1[0] + " in the image?").text();
         console.log(q);
         $(".answer").click(function(){
@@ -51,11 +52,16 @@ $(document).ready(function () {
 
            if(checkResult ==true){
                if(playerChoice == "yes")
-               score++;
-           }
-
+                 if(score < 4)
+                    score++;
+           } 
            console.log(score);
+           $(".score").html("Score: "+score + "/ 4"); 
         })
+
+        // var q = $(".question_box > h2").html("Is there a " + levels.level_1[1] + " in the image?").text();
+
+        
     }
     setTimeout(timeout, 62000);
 
