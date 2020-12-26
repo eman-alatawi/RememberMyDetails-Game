@@ -13,79 +13,88 @@ function updateTimer() {
 }
 setInterval(updateTimer, 1000)
 
-//levels litral object
-let levels = {
-    level_1: ["Hammer", "Gallon", "Saw", "Ruler"]
-}
+var ques = $(".question_box > h2");
+var answers = $(".answer");
+// console.log(answers);
 
-let score = 0;
+let currentQues = {};
+var score = 0 ;
+let quesCounter = 0;
+let remainingQues = [];
 
-// let checkForObjectName = function(hidden_word){
-//     // return str.includes(levels.level_1);
-//     for (var i =0 ; i<levels.level_1.length; i++)
-//     {
-//         console.log(levels.level_1[i].search(hidden_word))
-//         // return str.includes(levels.level_1[i]);
+
+//levelQuestions array with litral object
+let levelQuestions = [
+    {
+        question: "Is there a Hammer in the image?",
+        playerChoice: "YES",
+        playerChoice: "NO",
+        correctAnswer:1
+    },
+    {
+        question: "Is there a Comb in the image?",
+        playerChoice: "YES",
+        playerChoice: "NO",
+        correctAnswer:2
+    },
+    {
+        question: "Is there a Saw in the image?",
+        playerChoice: "YES",
+        playerChoice: "NO",
+        correctAnswer:1
+    },
+    {
+        question: "Is there a TV in the image?",
+        playerChoice: "YES",
+        playerChoice: "NO",
+        correctAnswer:2
+    },
+    {
+        question: "Is there a Gallon in the image?",
+        playerChoice: "YES",
+        playerChoice: "NO",
+        correctAnswer:1
+    },
+    {
+        question: "Is there a Ruler in the image?",
+        playerChoice: "YES",
+        playerChoice: "NO",
+        correctAnswer:1
+    },
+    {
+        question: "Is there a Car in the image?",
+        playerChoice: "YES",
+        playerChoice: "NO",
+        correctAnswer:2
+    },
+    {
+        question: "Is there a Chain in the image?",
+        playerChoice: "YES",
+        playerChoice: "NO",
+        correctAnswer:2
+    },
+    
+];
+// console.log(levelQuestions);
+
+
+
+
+// // $(document).ready(function () {
+//     $(".question_box").hide();
+
+//     const timeout = function () {
+
+//         $(".level1_page").css({
+//             "filter": "blur(8px)",
+//             "-webkit-filter": "blur(8px)",
+//         })
+//         $(".question_box").show();
+
 //     }
-// }
+//     setTimeout(timeout, 62000);
+// // })
 
-var checkForHiddenWord = function (question, hidden_word) {
-    var qusSplit = question.split(' ');
-
-    for (var i = 0; i < qusSplit.length; i++) {
-        if (qusSplit[i] == (hidden_word)) {
-            //   console.log("true found word "+qusSplit[i]);
-            return true;
-        }
-    }
-}
-
-
-$(document).ready(function () {
-    $(".question_box").hide();
-
-    const timeout = function () {
-
-        $(".level1_page").css({
-            "filter": "blur(8px)",
-            "-webkit-filter": "blur(8px)",
-        })
-        $(".question_box").show();
-
-        // first question
-        var q = $(".question_box > h2").html("Is there a " + levels.level_1[1] + " in the image?").text();
-        var hidden_word = levels.level_1[1];
-        console.log(hidden_word);
-        $(".answer").click(function () {
-            var playerChoice = $(this).attr("id");
-            console.log(playerChoice);
-
-            var checkResult = checkForHiddenWord(q, hidden_word);
-            console.log(checkResult);
-
-            if (checkResult == true) {
-                if (playerChoice == "yes")
-                    if (score < 4)
-                        score++;
-            }
-            console.log(score);
-            $(".score").html("Score: " + score + " / 4");
-        })
-
-    }
-    setTimeout(timeout, 62000);
-
-
-
-
-
-
-
-
-
-
-
-})
 
 
 
