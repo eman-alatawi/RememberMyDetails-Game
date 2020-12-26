@@ -1,4 +1,4 @@
-# ToyHiddenObjects
+# RememberMyDetails 
 List of technologies used in this project:
 - HTML
 - CSS 
