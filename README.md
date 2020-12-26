@@ -18,3 +18,21 @@ List of technologies used in this project:
 - As a player, I want to answer all the Yes/No questions, so that I can move to the next level.
 - As a player, I want to see my scores, so that I can know if answers are correct or not.
 As a player, I want to increase my scores every time I answered correctly so that I can prove how good my visual memory is.
+
+## Planning/Development process and problem-solving strategy
+- Create New Repository in GitHub Enterprise.
+- Prepare the Folders and Files for the game.
+  - create README.md
+  - create index.html
+  - create levels folder
+     - create level1.html
+  - create css folder 
+     - create styles.css
+  - create js folder
+     - create main.js
+  - create images folder 
+     - create wireframe folder for wireframe images 
+     - create level_1 folder for level 1 image
+ - work on the Design of index.html as the main page of the game.
+ - work on the first level in level1.html.
+ - work on main.js file to build the logic of the game. 
