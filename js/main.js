@@ -13,8 +13,11 @@ function updateTimer() {
 }
 setInterval(updateTimer, 1000)
 
+// Elements 
 const ques = document.getElementById("question");
 const answers = Array.from(document.getElementsByClassName("answer"));
+const displayQuestionCounter = document.getElementById("questionCounter");
+const displayScore = document.getElementById("score");
 
 // console.log(answers);
 
@@ -78,6 +81,7 @@ let levelQuestions = [
 
 ];
 
+const scoreBycorrectAnswer = 5;
 const numberOfAllQues = 8;
 
 let startGame = function () {
@@ -97,6 +101,7 @@ let GenerateNewQues = function () {
         return window.location.assign("/level2.html");
     }
     quesCounter++;
+    displayQuestionCounter.innerText = "Question:" + quesCounter + "/" + numberOfAllQues;
     //generate random question
     const quesIndex = Math.floor(Math.random() * remainingQues.length);
     currentQues = remainingQues[quesIndex];
@@ -121,6 +126,10 @@ answers.forEach(answer => {
         const selectedAnswer = PlayerselectedChoice.dataset["choice"];
 
         const addToClass = selectedAnswer == currentQues.correctAnswer ? 'correctClass' : 'wrongClass';
+
+        if (addToClass === 'correctClass'){
+            scoreIncrement(scoreBycorrectAnswer);
+        }
         PlayerselectedChoice.classList.add(addToClass);
 
         setTimeout(function(){
@@ -132,6 +141,11 @@ answers.forEach(answer => {
        
     });
 });
+
+let scoreIncrement = function(addToScore){
+    score += addToScore;
+    displayScore.innerText = "Score: "+ score;
+}
 
 // startGame();
 
