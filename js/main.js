@@ -71,13 +71,32 @@ let levelQuestions = [
         question: "Is there a Chain in the image?",
         playerChoice: "YES",
         playerChoice: "NO",
-        correctAnswer:2
+        correctAnswer:1
     },
-    
+     
 ];
-// console.log(levelQuestions);
 
+const numberOfAllQues = 8;
 
+let startGame = function(){
+    quesCounter = 0;
+    score = 0;
+    remainingQues = [...levelQuestions];
+    console.log(remainingQues);
+    GenerateNewQues();
+    ques.text(currentQues.question);
+    
+};
+
+let GenerateNewQues = function(){
+    quesCounter++;
+    //generate random question
+    const quesIndex = Math.floor(Math.random() * remainingQues.length);
+    currentQues = remainingQues[quesIndex];
+
+};
+startGame();
+ 
 
 
 // // $(document).ready(function () {
