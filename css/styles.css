@@ -149,3 +149,13 @@ header {
 .answer:hover {
   color: rgba(241, 163, 36, 0.973);
 }
+
+/* show effects for the correct/ wrong answers */
+
+.correctClass{
+  box-shadow: 0 4px 8px 0 rgba(14, 226, 109, 0.767);
+}
+
+.wrongClass{
+  box-shadow: 0 4px 8px 0 rgba(226, 39, 14, 0.767);
+}

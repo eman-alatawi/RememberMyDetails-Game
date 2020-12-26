@@ -16,7 +16,7 @@ setInterval(updateTimer, 1000)
 const ques = document.getElementById("question");
 const answers = Array.from(document.getElementsByClassName("answer"));
 
-console.log(answers);
+// console.log(answers);
 
 let currentQues = {};
 var score = 0;
@@ -119,8 +119,17 @@ answers.forEach(answer => {
 
         const PlayerselectedChoice = e.target;
         const selectedAnswer = PlayerselectedChoice.dataset["choice"];
-        console.log(selectedAnswer);
-        GenerateNewQues();
+
+        const addToClass = selectedAnswer == currentQues.correctAnswer ? 'correctClass' : 'wrongClass';
+        PlayerselectedChoice.classList.add(addToClass);
+
+        setTimeout(function(){
+            PlayerselectedChoice.classList.remove(addToClass);
+            GenerateNewQues();
+        },1000);
+
+        console.log();
+       
     });
 });
 
