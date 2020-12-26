@@ -143,6 +143,7 @@ header {
 .answer {
   width: 100px;
   font-size: x-large;
+  border: 2px dotted #f1f1f1;
 }
 
 .answer:hover {
