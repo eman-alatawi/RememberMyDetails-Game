@@ -54,10 +54,9 @@ let levelQuestions = [
 
 ];
 
-import {startGame} from './main.js' ;
+import { startGame } from './main.js';
 
-// startGame(levelQuestions);
-
+//  JQuery - Start Point
 $(document).ready(function () {
     $(".question_box").hide();
 

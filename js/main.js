@@ -35,7 +35,7 @@ const displayQuestionCounter = document.getElementById("questionCounter");
 const displayScore = document.getElementById("score");
 var correctAnswerAudio = document.getElementById("correct_Answer");
 var wrongAnswerAudio = document.getElementById("wrong_Answer");
-var level1_bcMusic = document.getElementById("level1_bcMusic"); 
+var level1_bcMusic = document.getElementById("level1_bcMusic");
 
 
 //variables - Arrays - Objects
@@ -46,8 +46,8 @@ let remainingQues = [];         //contain only the unused questions
 const scoreBycorrectAnswer = 5; //every correct answer worth 5 bonus added to the score
 const numberOfAllQues = 8;      //number of the whole questions in this level
 //store them in local storage to use them in another page [endLevel.html]
-localStorage.setItem("scoreBycorrectAnswer" ,scoreBycorrectAnswer);
-localStorage.setItem("numberOfAllQues" ,numberOfAllQues);
+localStorage.setItem("scoreBycorrectAnswer", scoreBycorrectAnswer);
+localStorage.setItem("numberOfAllQues", numberOfAllQues);
 
 
 
@@ -98,9 +98,9 @@ answers.forEach(answer => {
         const addToClass = selectedAnswer == currentQues.correctAnswer ? 'correctClass' : 'wrongClass';
         //if the answer is correct then call the scoreIncrement method to increase the score and display it
         if (addToClass === 'correctClass') {
-            correctAnswerAudio.play(); 
+            correctAnswerAudio.play();
             scoreIncrement(scoreBycorrectAnswer);
-        }else{
+        } else {
             wrongAnswerAudio.play();
         }
         PlayerselectedChoice.classList.add(addToClass);
@@ -118,9 +118,9 @@ let scoreIncrement = function (addToScore) {
     displayScore.innerText = "Score: " + score;  //display score
 }
 
-export {startGame};
+export { startGame };
 
-//  JQuery - Start Point
+
 
 
 
