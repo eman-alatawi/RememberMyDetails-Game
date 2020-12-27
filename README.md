@@ -33,3 +33,7 @@ List of technologies used in this project:
  - work on the Design of index.html as the main page of the game.
  - work on the first level in level1.html.
  - work on main.js file to build the logic of the game. 
+ - make the questions dynamic.
+ - Add color/sound effects to the correct and wrong choices.
+ - Increase the score of the player for every correct choice and store it in the local storage for later use.
+ - Open the next level. 
