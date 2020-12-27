@@ -1,9 +1,10 @@
 # RememberMyDetails 
 List of technologies used in this project:
-- HTML
-- CSS 
+- HTML5
+- CSS3 
 - Java Script
 - Jquery
+- Font Awesome CDN
 
 ## Wireframes:
 ![wirefram](images/wireframe/RememberMyDetailsWireframe.png)
