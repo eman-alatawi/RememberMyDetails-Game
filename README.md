@@ -6,12 +6,8 @@ List of technologies used in this project:
 - Jquery
 
 ## Wireframes:
-![main page](images/wireframe/Main.png)
-![First level when click on start game button](images/wireframe/Level1.png)
-![first question](images/wireframe/Level_1_QUESTIONS.png)
-![last question](images/wireframe/Level_1_FINAL.png)
-![second level when click on level 2](images/wireframe/Level2.png)
-![how to play instructions](images/wireframe/HowToPlay.png)
+![wirefram](images/wireframe/RememberMyDetailsWireframe.png)
+
 
 ## User Stories:
 - As a player, I want to remember the details for every image, so that I can answer the questions easily before the time is out.
