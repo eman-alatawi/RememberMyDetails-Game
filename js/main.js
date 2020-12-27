@@ -49,62 +49,11 @@ const numberOfAllQues = 8;      //number of the whole questions in this level
 localStorage.setItem("scoreBycorrectAnswer" ,scoreBycorrectAnswer);
 localStorage.setItem("numberOfAllQues" ,numberOfAllQues);
 
-//levelQuestions array with litral objects
-let levelQuestions = [
-    {
-        question: "Is there a Hammer in the image?",
-        playerChoice1: "YES",
-        playerChoice2: "NO",
-        correctAnswer: 1
-    },
-    {
-        question: "Is there a Comb in the image?",
-        playerChoice1: "YES",
-        playerChoice2: "NO",
-        correctAnswer: 2
-    },
-    {
-        question: "Is there a Saw in the image?",
-        playerChoice1: "YES",
-        playerChoice2: "NO",
-        correctAnswer: 1
-    },
-    {
-        question: "Is there a TV in the image?",
-        playerChoice1: "YES",
-        playerChoice2: "NO",
-        correctAnswer: 2
-    },
-    {
-        question: "Is there a Gallon in the image?",
-        playerChoice1: "YES",
-        playerChoice2: "NO",
-        correctAnswer: 1
-    },
-    {
-        question: "Is there a Ruler in the image?",
-        playerChoice1: "YES",
-        playerChoice2: "NO",
-        correctAnswer: 1
-    },
-    {
-        question: "Is there a Car in the image?",
-        playerChoice1: "YES",
-        playerChoice2: "NO",
-        correctAnswer: 2
-    },
-    {
-        question: "Is there a Chain in the image?",
-        playerChoice1: "YES",
-        playerChoice2: "NO",
-        correctAnswer: 1
-    },
 
-];
 
 
 //Second Point
-let startGame = function () {
+let startGame = function (levelQuestions) {
     quesCounter = 0;
     score = 0;
     remainingQues = [...levelQuestions]; //copy all the Array elements and store it in another array
@@ -169,24 +118,10 @@ let scoreIncrement = function (addToScore) {
     displayScore.innerText = "Score: " + score;  //display score
 }
 
-
+export {startGame};
 
 //  JQuery - Start Point
-$(document).ready(function () {
-    $(".question_box").hide();
 
-    const timeout = function () {
-
-        $(".level1_page").css({
-            "filter": "blur(8px)",
-            "-webkit-filter": "blur(8px)",
-        })
-        $(".question_box").show();
-
-        startGame();
-    }
-    setTimeout(timeout, 62000);
-})
 
 
 
