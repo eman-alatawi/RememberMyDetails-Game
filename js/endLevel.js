@@ -8,7 +8,7 @@ const result = document.getElementById("result");
 
 $(document).ready(function () {
     //show the icone based on the score
-    $("i").hide();
+    $(".emoji i").hide();
     if (score == scoreBycorrectAnswer * numberOfAllQues) {  //top score = 40
         result.innerText = "WOW, YOU HAVE AN EXCELLENT VISUAL MEMORY!!"
         $(".fa-grin-stars").show();
