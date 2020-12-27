@@ -33,6 +33,8 @@ const ques = document.getElementById("question");
 const answers = Array.from(document.getElementsByClassName("answer"));
 const displayQuestionCounter = document.getElementById("questionCounter");
 const displayScore = document.getElementById("score");
+var correctAnswerAudio = document.getElementById("correct_Answer");
+var wrongAnswerAudio = document.getElementById("wrong_Answer");
 
 
 //variables - Arrays - Objects
@@ -146,7 +148,10 @@ answers.forEach(answer => {
         const addToClass = selectedAnswer == currentQues.correctAnswer ? 'correctClass' : 'wrongClass';
         //if the answer is correct then call the scoreIncrement method to increase the score and display it
         if (addToClass === 'correctClass') {
+            correctAnswerAudio.play(); 
             scoreIncrement(scoreBycorrectAnswer);
+        }else{
+            wrongAnswerAudio.play();
         }
         PlayerselectedChoice.classList.add(addToClass);
         //set time (1 sec) to remove the effect and call GenerateNewQues() methode for the next question and so on
