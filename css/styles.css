@@ -49,11 +49,11 @@ header {
   margin: 1.3em;
   box-shadow: 0 4px 8px 0 rgba(226, 14, 14, 0.767);
 }
-.btn > a {
+ a {
   text-decoration: none;
   color: rgb(224, 42, 10);
 }
-.btn > a:hover {
+a:hover {
   color: rgb(223, 210, 207);
 }
 
@@ -115,7 +115,7 @@ header {
   margin: 10px;
 }
 
-.question_box ,.result_box{
+.question_box ,.result_box, .howToPlayList{
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   color: white;
@@ -194,3 +194,26 @@ i {
   color: rgba(241, 163, 36, 0.973);
   font-size: xx-large;
 }
+
+
+/* HowToPlay_page */
+
+.HowToPlay_page{
+  padding: 0.3em;
+  background-color: rgb(46, 40, 41);
+  height: 100vh;
+  background-image: url("/images/howtoplayBc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+ul li{
+  font-size: small;
+  line-height: 2em;
+  text-align: left;
+}
+
+
