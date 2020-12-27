@@ -42,6 +42,10 @@ let quesCounter = 0;            //to count the random questions and display it
 let remainingQues = [];         //contain only the unused questions
 const scoreBycorrectAnswer = 5; //every correct answer worth 5 bonus added to the score
 const numberOfAllQues = 8;      //number of the whole questions in this level
+//store them in local storage to use them in another page [endLevel.html]
+localStorage.setItem("scoreBycorrectAnswer" ,scoreBycorrectAnswer);
+localStorage.setItem("numberOfAllQues" ,numberOfAllQues);
+
 //levelQuestions array with litral objects
 let levelQuestions = [
     {
@@ -111,7 +115,10 @@ let GenerateNewQues = function () {
     //check if no remaining questions - meanes all the questions are shown - then should move to the next level
     if (remainingQues.length === 0 || quesCounter >= numberOfAllQues) {
         //go to next level 
-        return window.location.assign("/level2.html");
+
+        localStorage.setItem("theScore", score);
+        return window.location.assign("endLevel.html");
+
     }
     quesCounter++;
     displayQuestionCounter.innerText = "Question:" + quesCounter + "/" + numberOfAllQues;  //display question counter

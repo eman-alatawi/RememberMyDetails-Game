@@ -93,7 +93,9 @@ header {
   top: 0px;
   left: 0;
 }
-
+#countdown{
+  font-size: large;
+}
 #bottom_nav {
   background-color: rgba(12, 9, 6, 0.589);
   width: 100%;
@@ -164,4 +166,18 @@ header {
 
 .wrongClass{
   box-shadow: 0 4px 8px 0 rgba(226, 39, 14, 0.767);
+}
+
+
+/* endLevel.html Styles */
+.endLevel_page {
+  padding: 0.3em;
+  background-color: rgb(46, 40, 41);
+  height: 100vh;
+  background-image: url("/images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
 }
