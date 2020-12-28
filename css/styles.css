@@ -40,6 +40,7 @@ header {
 
 .buttons_container > .btn {
   background-color: rgba(241, 162, 36, 0.966);
+  color: rgb(224, 42, 10);
   border-radius: 2em;
   width: 20%;
   font-size: 1em;
@@ -234,4 +235,19 @@ h6 i{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+
+/* gameOver.html style */
+
+.gameOver_page{
+  padding: 0.3em;
+  background-color: rgb(46, 40, 41);
+  height: 100vh;
+  background-image: url("/images/tamara-s-scene-021.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
 }

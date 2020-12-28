@@ -1,6 +1,3 @@
-console.log(window.location.href);
-
-
 
 
 //levelQuestions array with litral objects
@@ -58,6 +55,7 @@ let levelQuestions = [
 ];
 
 import { startGame } from './main.js';
+
 
 //  JQuery - Start Point
 $(document).ready(function () {

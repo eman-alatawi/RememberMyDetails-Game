@@ -50,7 +50,7 @@ localStorage.setItem("scoreBycorrectAnswer", scoreBycorrectAnswer);
 localStorage.setItem("numberOfAllQues", numberOfAllQues);
 
 
-
+let scores = [];
 
 //Second Point
 let startGame = function (levelQuestions) {
@@ -62,13 +62,16 @@ let startGame = function (levelQuestions) {
 
 };
 
+
 //Third Point
 let GenerateNewQues = function () {
     //check if no remaining questions - meanes all the questions are shown - then should move to the next level
     if (remainingQues.length === 0 || quesCounter >= numberOfAllQues) {
-        //go to next level 
-
+        // store the score for each level in the scores array to display them in the gameOver.html
+        scores.push(score);
+        localStorage.setItem("scoresArray", JSON.stringify(scores));
         localStorage.setItem("theScore", score);
+        //go to next level 
         return window.location.assign("endLevel.html");
 
     }
@@ -119,6 +122,7 @@ let scoreIncrement = function (addToScore) {
 }
 
 export { startGame };
+export { scores };
 
 
 
