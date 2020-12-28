@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Coming soon 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <title>Level 3</title>
+  </head>
+  <body>
+    <!-- audio files -->
+    <!-- background music -->
+    <audio
+      id="level1_bcMusic"
+      src="/audio/One-Night_Looping.mp3"
+      autoplay="autoplay"
+      loop="loop"
+    ></audio>
+    <!-- sound effect -->
+    <audio id="correct_Answer">
+      <source src="/audio/correctAnswer.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="wrong_Answer">
+      <source src="/audio/worngAnswer.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="level3_page"></div>
+    <div class="top_nav">
+      <div id="countdown">1:00</div>
+      <h3 id="level">LEVEL 3</h3>
+    </div>
+
+    <div id="bottom_nav">
+      <div class="btn"><a href="/index.html">Main Menu</a></div>
+    </div>
+
+    <div class="question_box">
+      <div class="info_tracker">
+        <div id="questionCounter"></div>
+        <div id="score">Score: 0</div>
+      </div>
+      <h2 id="question"></h2>
+      <div class="answers_container">
+        <div class="answer" data-choice="1"></div>
+        <div class="answer" data-choice="2"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/level3.js"></script>
+  </body>
 </html>

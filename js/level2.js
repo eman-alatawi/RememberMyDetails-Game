@@ -10,43 +10,43 @@ let levelQuestions = [
         correctAnswer: 1
     },
     {
-        question: "Is there a spoon in the image?",
+        question: "Is there a Spoon in the image?",
         playerChoice1: "YES",
         playerChoice2: "NO",
         correctAnswer: 2
     },
     {
-        question: "Is there a tape in the image?",
+        question: "Is there a Tape in the image?",
         playerChoice1: "YES",
         playerChoice2: "NO",
         correctAnswer: 1
     },
     {
-        question: "Is there a cup water in the image?",
+        question: "Is there a Cup of Water in the image?",
         playerChoice1: "YES",
         playerChoice2: "NO",
         correctAnswer: 2
     },
     {
-        question: "Is there a candle in the image?",
+        question: "Is there a Candle in the image?",
         playerChoice1: "YES",
         playerChoice2: "NO",
         correctAnswer: 1
     },
     {
-        question: "Is there a turtle in the image?",
+        question: "Is there a Turtle in the image?",
         playerChoice1: "YES",
         playerChoice2: "NO",
         correctAnswer: 1
     },
     {
-        question: "Is there a calender in the image?",
+        question: "Is there a Calender in the image?",
         playerChoice1: "YES",
         playerChoice2: "NO",
         correctAnswer: 2
     },
     {
-        question: "Is there a flower in the image?",
+        question: "Is there a Flower in the image?",
         playerChoice1: "YES",
         playerChoice2: "NO",
         correctAnswer: 1
