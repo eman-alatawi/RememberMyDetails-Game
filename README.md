@@ -86,3 +86,4 @@ this my favorite part of the code which is the core of how each level is unique 
 ## Some useful Resources:
 
 - [Font Awesome icons ~ the web's most popular icon set and toolkit.][https://fontawesome.com/]
+- [Animate.css ~ is a library of ready-to-use, cross-browser animations for use in your web projects.][https://animate.style/]

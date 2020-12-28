@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Game Over</title>
-</head>
-<body>
-     <!-- background music -->
+  </head>
+  <body>
+    <!-- background music -->
 
-     <audio  id="level1_bcMusic" src="/audio/finals.wav" autoplay="autoplay" ></audio>
+    <audio
+      id="level1_bcMusic"
+      src="/audio/finals.wav"
+      autoplay="autoplay"
+    ></audio>
 
-     <div class="gameOver_page"></div>
-     <div class="top_nav">
-       <h3 id="level">GAME OVER</h3>
-     </div>
- 
-     <div id="bottom_nav">
-       <div class="btn"><a href="/index.html">Main Menu</a></div>
-     </div>
- 
-     <div class="result_box">
-         <!-- <div class="emoji">
+    <div class="gameOver_page"></div>
+    <div class="top_nav">
+      <h3 id="level">GAME OVER</h3>
+    </div>
+
+    <div id="bottom_nav">
+      <div class="btn"><a href="/index.html">Main Menu</a></div>
+    </div>
+
+    <div class="result_box">
+      <!-- <div class="emoji">
          <i class="far fa-grin-stars"></i>
          <i class="far fa-sad-tear"></i>
          <i class="far fa-smile-wink"></i>
          </div> -->
-         <div id="levelScore"> </div>
-     </div>
-       <script
-       src="https://code.jquery.com/jquery-3.5.1.js"
-       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-       crossorigin="anonymous"></script>
-       <script type="module" src="/js/gameOver.js"></script>
-</body>
+      <div id="levelScore"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/js/gameOver.js"></script>
+  </body>
 </html>

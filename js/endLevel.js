@@ -18,6 +18,7 @@ $(document).ready(function () {
         result.innerText = "YOU REMEMBER ME, AREN'T YOU?";
         $(".fa-sad-tear").show();
     }
+    // result.classList.add('animate__animated', 'animate__heartBeat','animate__infinite');
 
 })
 

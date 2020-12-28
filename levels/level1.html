@@ -4,27 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
-
+    <!-- animate.css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Level 1</title>
   </head>
   <body>
     <!-- audio files -->
     <!-- background music -->
-    <audio  id="level1_bcMusic" src="/audio/Puzzle-Trance.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio
+      id="level1_bcMusic"
+      src="/audio/Puzzle-Trance.mp3"
+      autoplay="autoplay"
+      loop="loop"
+    ></audio>
     <!-- sound effect -->
     <audio id="correct_Answer">
-      <source src="/audio/correctAnswer.wav" type="audio/wav">
-        Your browser does not support the audio element.
+      <source src="/audio/correctAnswer.wav" type="audio/wav" />
+      Your browser does not support the audio element.
     </audio>
     <audio id="wrong_Answer">
-      <source src="/audio/worngAnswer.wav" type="audio/wav">
-        Your browser does not support the audio element.
+      <source src="/audio/worngAnswer.wav" type="audio/wav" />
+      Your browser does not support the audio element.
     </audio>
 
     <div class="level1_page"></div>
     <div class="top_nav">
       <div id="countdown">1:00</div>
-      <h3 id="level">LEVEL 1</h3>
+      <h3
+        id="level"
+        class="animate__animated animate__fadeInDown animate__delay-0.5s"
+      >
+        LEVEL 1
+      </h3>
     </div>
 
     <div id="bottom_nav">

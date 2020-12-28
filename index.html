@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
 
-    <title>Main</title>
-  </head>
-  <body>
-    <!-- background music -->
-    <audio src="/audio/Endless-Sci-Fi-Runner.mp3" autoplay="autoplay" loop="loop"></audio>
-    <div class="index_page">
-      <header>
-        <h1 class="gameName">Remember My Details</h1>
-      </header>
-      <div class="buttons_container">
-        <div class="btn"><a href="/levels/level1.html">Start Game</a></div>
-        <div class="btn"><a href="/howToPlay.html">How To Paly</a></div>
-        <div class="btn" onclick=window.close()> <a href="">Quit Game</a></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>Main</title>
+</head>
+
+<body>
+  <!-- background music -->
+  <audio src="/audio/Endless-Sci-Fi-Runner.mp3" autoplay="autoplay" loop="loop"></audio>
+  <div class="index_page">
+    <header>
+      <h1 class="gameName">Remember My Details</h1>
+    </header>
+    <div class="buttons_container">
+      <div class="btn animate__animated animate__pulse nimate__slower animate__infinite">
+        <a href="/levels/level1.html">Start Game</a>
+      </div>
+      <div class="btn"><a href="/howToPlay.html">How To Paly</a></div>
+      <div class="btn" onclick="window.close()">
+        <a href=" ">Quit Game</a>
       </div>
     </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="js/main.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+
 </html>
