@@ -29,6 +29,8 @@ ARE YOU EXCITED?
 - As a player, I want to see my scores, so that I can know if my answers are correct or not.
 - As a player, I want to increase my scores every time I answered correctly so that I can prove how good my visual memory is.
 - As a player, I want to play in a game with sound effects and music, so that I can enjoy the game.
+- As a player, I want to have instructions about how to play, so that I understand how it works.
+- As a player, I want to have buttons and navigations, so that I can move between parts easily.
 ## Planning/Development process and problem-solving strategy:
 - Create New Repository in GitHub Enterprise.
 - Prepare the Folders and Files for the game.
