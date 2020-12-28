@@ -1,4 +1,7 @@
-console.log("from level 2 js")
+console.log(window.location.href);
+
+
+
 
 //levelQuestions array with litral objects
 

@@ -1,5 +1,7 @@
 // console.log("from level 1 js");
 
+
+
 //levelQuestions array with litral objects
 
 let levelQuestions = [
