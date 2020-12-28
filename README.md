@@ -1,4 +1,4 @@
-# RememberMyDetails 
+# Remember My Details Game: 
 List of technologies used in this project:
 - HTML5
 - CSS3 
@@ -17,7 +17,7 @@ List of technologies used in this project:
 - As a player, I want to see my scores, so that I can know if my answers are correct or not.
 - As a player, I want to increase my scores every time I answered correctly so that I can prove how good my visual memory is.
 - As a player, I want to play in a game with sound effects and music, so that I can enjoy the game.
-## Planning/Development process and problem-solving strategy
+## Planning/Development process and problem-solving strategy:
 - Create New Repository in GitHub Enterprise.
 - Prepare the Folders and Files for the game.
   - create README.md
@@ -38,3 +38,37 @@ List of technologies used in this project:
  - Add color/sound effects to the correct and wrong choices.
  - Increase the score of the player for every correct choice and store it in the local storage for later use.
  - Open the next level. 
+
+## Unsolved Problems :
+1- save all the score of the levels and show it later.
+## How to become a winner:
+- First, you should be clear-minded and focus on the picture for one minute.
+- Then read the questions while trying to imagine what objects/things you saw in the picture.
+- Last but not least, I hope you like the game and have fun when playing it.
+## My favorite functions:
+
+```javascript
+$(document).ready(function () {
+    $(".question_box").hide();
+
+    const timeout = function () {
+
+        $(".level2_page").css({
+            "filter": "blur(8px)",
+            "-webkit-filter": "blur(8px)",
+        })
+        $(".question_box").show();
+
+        startGame(levelQuestions);
+    }
+    setTimeout(timeout, 62000);
+})
+```
+
+this my favorite part of the code which is the core of how each level is unique from others. As you can see I use JQuery here. 
+-  make the blur effect and call the startGame function with the levelQuestions which is an [Array of objects] as an argument after 1 minute.
+- then the whole work starts from this point for all levels.
+
+## Some useful information:
+
+- [Font Awesome icons ~ the web's most popular icon set and toolkit.][https://fontawesome.com/]
