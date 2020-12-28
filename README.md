@@ -1,5 +1,17 @@
 # Remember My Details Game: 
-List of technologies used in this project:
+## What is the story behind this game?
+Well, if you think you have a good memory, maybe you should try this little simple game that is focused on how much good your visual memory is.
+
+ok seems fun right? then what is the visual memory?
+
+Visual memory is the ability to remember or recall information such as activities, pictures, or words that have been viewed in the past.
+
+can you figure out what the game looks like? yes you're right it's about pictures you have to remember everything in it as if it's a friend :)
+
+that's how the name of the game created ;) 
+
+ARE YOU EXCITED?
+## List of technologies used in this project:
 - HTML5
 - CSS3 
 - Java Script
@@ -69,6 +81,6 @@ this my favorite part of the code which is the core of how each level is unique 
 -  make the blur effect and call the startGame function with the levelQuestions which is an [Array of objects] as an argument after 1 minute.
 - then the whole work starts from this point for all levels.
 
-## Some useful information:
+## Some useful Resources:
 
 - [Font Awesome icons ~ the web's most popular icon set and toolkit.][https://fontawesome.com/]
