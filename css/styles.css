@@ -14,7 +14,7 @@ body {
   padding: 6em;
   background-color: rgb(46, 40, 41);
   height: 100vh;
-  background-image: url("https://git.generalassemb.ly/eman-e-alatawi/RememberMyDetails/blob/master/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
