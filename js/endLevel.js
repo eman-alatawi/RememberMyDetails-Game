@@ -18,8 +18,6 @@ $(document).ready(function () {
         result.innerText = "YOU REMEMBER ME, AREN'T YOU?";
         $(".fa-sad-tear").show();
     }
-    // result.classList.add('animate__animated', 'animate__heartBeat','animate__infinite');
-
 })
 
 //to know what the previous level the player was in and get there, and to direct him to another level
