@@ -27,12 +27,12 @@ var previous_url = document.referrer;
 
 let newLevel = function () {
     if (previous_url === "https://pages.git.generalassemb.ly/eman-e-alatawi/RememberMyDetails/level1.html") {
-        window.location.assign("level2.html");
+        window.location.assign("https://pages.git.generalassemb.ly/eman-e-alatawi/RememberMyDetails/level2.html");
     } else if (previous_url === "https://pages.git.generalassemb.ly/eman-e-alatawi/RememberMyDetails/level2.html") {
-        window.location.assign("level3.html");
+        window.location.assign("https://pages.git.generalassemb.ly/eman-e-alatawi/RememberMyDetails/level3.html");
     }
     else if (previous_url === "https://pages.git.generalassemb.ly/eman-e-alatawi/RememberMyDetails/level3.html"){
-        window.location.assign("gameOver.html");
+        window.location.assign("https://pages.git.generalassemb.ly/eman-e-alatawi/RememberMyDetails/gameOver.html");
     }
 
 }
