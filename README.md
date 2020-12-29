@@ -54,7 +54,7 @@ ARE YOU EXCITED?
  - Open the next level. 
 
 ## Unsolved Problems :
-1- save all the score of the levels and show it later.
+Nothing 
 ## How to become a winner:
 - First, you should be clear-minded and focus on the picture for one minute.
 - Then read the questions while trying to imagine what objects/things you saw in the picture.
