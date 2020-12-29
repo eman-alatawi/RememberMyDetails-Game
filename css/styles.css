@@ -76,7 +76,7 @@ a:hover {
   padding: 0.3em;
   background-color: rgb(46, 40, 41);
   height: 100vh;
-  background-image: url("images/image2.jpg");
+  background-image: url("/images/image2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -183,7 +183,7 @@ a:hover {
   padding: 0.3em;
   background-color: rgb(46, 40, 41);
   height: 100vh;
-  background-image: url("images/antoine-lamoureux-pikeplacemarket-large-items.jpg");
+  background-image: url("/images/antoine-lamoureux-pikeplacemarket-large-items.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -204,7 +204,7 @@ i {
   padding: 0.3em;
   background-color: rgb(46, 40, 41);
   height: 100vh;
-  background-image: url("images/howtoplayBc.jpg");
+  background-image: url("/images/howtoplayBc.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -231,7 +231,7 @@ h6 i{
   padding: 0.3em;
   background-color: rgb(46, 40, 41);
   height: 100vh;
-  background-image: url("images/image3.jpg");
+  background-image: url("/images/image3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -242,7 +242,7 @@ h6 i{
   padding: 0.3em;
   background-color: rgb(46, 40, 41);
   height: 100vh;
-  background-image: url("images/level3.jpg");
+  background-image: url("/images/level3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -254,7 +254,7 @@ h6 i{
   padding: 0.3em;
   background-color: rgb(46, 40, 41);
   height: 100vh;
-  background-image: url("images/gameOver.jpg");
+  background-image: url("/images/gameOver.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
