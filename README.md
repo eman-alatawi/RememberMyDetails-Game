@@ -16,7 +16,11 @@ ARE YOU EXCITED?
 - CSS3 
 - Java Script
 - Jquery
+- JSON
 - Font Awesome CDN
+- Animate.css CDN
+- Balsamiq Wireframes
+- Visual Studio Code
 
 ## Wireframes:
 ![wirefram](images/wireframe/RememberMyDetailsWireframe.png)
