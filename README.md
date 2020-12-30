@@ -23,7 +23,7 @@ ARE YOU EXCITED?
 - Visual Studio Code
 
 ## Wireframes:
-![wirefram](images/wireframe/RememberMyDetailsWireframe.png)
+![wirefram](images/wireframe/MainWireframes.png)
 
 
 ## User Stories:
