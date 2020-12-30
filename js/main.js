@@ -35,7 +35,7 @@ const displayQuestionCounter = document.getElementById("questionCounter");
 const displayScore = document.getElementById("score");
 var correctAnswerAudio = document.getElementById("correct_Answer");
 var wrongAnswerAudio = document.getElementById("wrong_Answer");
-var level1_bcMusic = document.getElementById("level1_bcMusic");
+// var level1_bcMusic = document.getElementById("level1_bcMusic");
 
 
 //variables - Arrays - Objects
@@ -120,6 +120,7 @@ let scoreIncrement = function (addToScore) {
     score += addToScore;
     displayScore.innerText = "Score: " + score;  //display score
 }
+
 
 export { startGame };
 export { scores };
