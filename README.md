@@ -57,6 +57,19 @@ ARE YOU EXCITED?
  - Increase the score of the player for every correct choice and store it in the local storage for later use.
  - Open the next level. 
 
+## App Screenshot:
+
+![home](images/screenShots/home.png)
+![how-to-play](images/screenShots/how-to-play.png)
+![level1](images/screenShots/level1.png)
+![level1-q](images/screenShots/level1-q.png)
+![level-complete](images/screenShots/level-complete.png)
+![level2](images/screenShots/level2.png)
+![level3](images/screenShots/level3.png)
+![level4](images/screenShots/level4.png)
+![level4-q](images/screenShots/level4-q.png)
+![gameOver](images/screenShots/gameOver.png)
+
 ## Unsolved Problems :
 Nothing 
 ## How to become a winner:
